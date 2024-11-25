@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL:jdbc:mysql://127.0.0.1:3306/scenemadb?useSSL=false&serverTimezone=UTC} # 환경변수 DB_URL, 기본값 제공
+    username: ${DB_USERNAME:root} # 환경변수 DB_USERNAME, 기본값 제공
+    password: ${DB_PASSWORD:12341234} # 환경변수 DB_PASSWORD, 기본값 제공
